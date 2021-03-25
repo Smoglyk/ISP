@@ -1,23 +1,23 @@
-﻿using System;
+using System;
 
 namespace Lab2_digital
 {
     class Program
     {
-        static void Check(out string s, out int i)
+        static void check(out string s, out Int64 i)
         {
             s = Console.ReadLine();
-            while (!Int32.TryParse(s, out i))
+            while (!Int64.TryParse(s, out i))
                 s = Console.ReadLine();
         }
         static void Main(string[] args)
         {
             string a_s, b_s;
-            int count = 0, a, b, product = 1;
-            Check(out a_s, out a);
-            Check(out b_s, out b);
+            Int64 count = 0, a, b, product = 1;
+            check(out a_s, out a);
+            check(out b_s, out b);
 
-            for(int i = a; i < b; i++)
+            for(Int64 i = a; i < b; i++)
             {
                 product *= (i + 1);
             }
