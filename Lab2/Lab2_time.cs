@@ -4,7 +4,7 @@ namespace Lab2_time
 {
     class Program
     {
-        static void check(ref string str)
+        static void Check(ref string str)
         {
             int[] arr = new int[10]; 
 
@@ -35,11 +35,11 @@ namespace Lab2_time
             string date2 = DateTime.UtcNow.ToString();
             
             Console.WriteLine(date1 + ":");
-            check(ref date1);
+            Check(ref date1);
             Console.WriteLine();
 
             Console.WriteLine(date2 + ":");
-            check(ref date2);
+            Check(ref date2);
 
         }
     }
