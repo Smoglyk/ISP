@@ -1,0 +1,13 @@
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\bin\Debug\netcoreapp3.1\Lab2_time.exe
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\bin\Debug\netcoreapp3.1\Lab2_time.deps.json
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\bin\Debug\netcoreapp3.1\Lab2_time.runtimeconfig.json
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\bin\Debug\netcoreapp3.1\Lab2_time.runtimeconfig.dev.json
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\bin\Debug\netcoreapp3.1\Lab2_time.dll
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\bin\Debug\netcoreapp3.1\Lab2_time.pdb
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\obj\Debug\netcoreapp3.1\Lab2_time.csprojAssemblyReference.cache
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\obj\Debug\netcoreapp3.1\Lab2_time.AssemblyInfoInputs.cache
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\obj\Debug\netcoreapp3.1\Lab2_time.AssemblyInfo.cs
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\obj\Debug\netcoreapp3.1\Lab2_time.csproj.CoreCompileInputs.cache
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\obj\Debug\netcoreapp3.1\Lab2_time.dll
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\obj\Debug\netcoreapp3.1\Lab2_time.pdb
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2_time\Lab2_time\obj\Debug\netcoreapp3.1\Lab2_time.genruntimeconfig.cache

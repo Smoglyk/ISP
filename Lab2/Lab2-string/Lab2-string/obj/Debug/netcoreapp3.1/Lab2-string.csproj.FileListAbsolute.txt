@@ -1,0 +1,13 @@
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\bin\Debug\netcoreapp3.1\Lab2-string.exe
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\bin\Debug\netcoreapp3.1\Lab2-string.deps.json
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\bin\Debug\netcoreapp3.1\Lab2-string.runtimeconfig.json
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\bin\Debug\netcoreapp3.1\Lab2-string.runtimeconfig.dev.json
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\bin\Debug\netcoreapp3.1\Lab2-string.dll
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\bin\Debug\netcoreapp3.1\Lab2-string.pdb
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\obj\Debug\netcoreapp3.1\Lab2-string.csprojAssemblyReference.cache
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\obj\Debug\netcoreapp3.1\Lab2-string.AssemblyInfoInputs.cache
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\obj\Debug\netcoreapp3.1\Lab2-string.AssemblyInfo.cs
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\obj\Debug\netcoreapp3.1\Lab2-string.csproj.CoreCompileInputs.cache
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\obj\Debug\netcoreapp3.1\Lab2-string.dll
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\obj\Debug\netcoreapp3.1\Lab2-string.pdb
+C:\Users\Jarvis\source\repos\ISP\Lab2\Lab2-string\Lab2-string\obj\Debug\netcoreapp3.1\Lab2-string.genruntimeconfig.cache
