@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Text;
 
 namespace Lab2_string
 {
@@ -6,29 +7,25 @@ namespace Lab2_string
     {
         static void Main(string[] args)
         {
-            int count1 = 0, count2 = 0;
-            string str = Console.ReadLine(), strReverse = " ", strStorage;
+            int count = 0, arr_c = 0;
+            char[] arr = new char[1000];
+            StringBuilder str = new StringBuilder(Console.ReadLine());
+           
             for(int i = str.Length - 1; i >= 0; i--)
             {
-                count1++;
+                count++;
                 if (str[i] == ' ' || i == 0)
                 {
-                    strStorage = str;
-                    strStorage = strStorage.Substring(i);
                     
-                    if(i == 0)
-                        strReverse = strReverse.Insert(count2 + 1 , strStorage);
-                    else
-                        strReverse = strReverse.Insert(count2, strStorage);
-                    str = str.Remove(i);
-                    count2 = count1;
-                    count1 = 0;
+                    str.CopyTo(i, arr, arr_c, count);
+                    arr_c += count;
+                    count = 0;
                 }
-                
+               
             }
-            strReverse = strReverse.Remove(0, 1);
 
-            Console.WriteLine(strReverse);
+
+            Console.WriteLine(arr);
         } 
     }
 }
