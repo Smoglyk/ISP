@@ -4,7 +4,7 @@ namespace Lab2_digital
 {
     class Program
     {
-        static void check(out string s, out int i)
+        static void Check(out string s, out int i)
         {
             s = Console.ReadLine();
             while (!Int32.TryParse(s, out i))
@@ -14,8 +14,8 @@ namespace Lab2_digital
         {
             string a_s, b_s;
             int count = 0, a, b, product = 1;
-            check(out a_s, out a);
-            check(out b_s, out b);
+            Check(out a_s, out a);
+            Check(out b_s, out b);
 
             for(int i = a; i < b; i++)
             {
