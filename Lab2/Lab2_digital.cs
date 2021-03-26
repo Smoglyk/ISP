@@ -4,7 +4,7 @@ namespace Lab2_digital
 {
     class Program
     {
-        static void check(out string s, out Int64 i)
+        static void Сheck(out string s, out Int64 i)
         {
             s = Console.ReadLine();
             while (!Int64.TryParse(s, out i))
@@ -14,8 +14,8 @@ namespace Lab2_digital
         {
             string a_s, b_s;
             Int64 count = 0, a, b, product = 1;
-            check(out a_s, out a);
-            check(out b_s, out b);
+            Сheck(out a_s, out a);
+            Сheck(out b_s, out b);
 
             for(Int64 i = a; i < b; i++)
             {
