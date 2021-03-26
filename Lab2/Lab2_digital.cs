@@ -1,39 +1,41 @@
 using System;
 
-namespace Lab2_digital
+namespace numbers
 {
     class Program
     {
-        static void Сheck(out string s, out Int64 i)
+        static UInt64 Calculate(UInt64 a)
         {
-            s = Console.ReadLine();
-            while (!Int64.TryParse(s, out i))
-                s = Console.ReadLine();
+            UInt64 power = 0;
+            while (a > 0)
+            {
+                a /= 2;
+                power += a;
+            }
+            return power;
         }
-        static void Main(string[] args)
+
+        static int Main(string[] args)
         {
-            string a_s, b_s;
-            Int64 count = 0, a, b, product = 1;
-            Сheck(out a_s, out a);
-            Сheck(out b_s, out b);
-
-            for(Int64 i = a; i < b; i++)
-            {
-                product *= (i + 1);
-            }
+            UInt64 a = 0, b = 0;
+           
+            Console.Write("Enter a. A must be > 0: ");
+            string str_a = Console.ReadLine();
+            while(!UInt64.TryParse(str_a, out a) || (a <= 0))
+                 str_a = Console.ReadLine();
             
-            while(true)
-            {
-                if (product % 2 == 0)
-                {
-                    count++;
-                    product /= 2;
-                }
-                else
-                    break;
-            }
+           
+            Console.Write("Enter positive b (b > a): ");
+            string str_b = Console.ReadLine();
+            while(!UInt64.TryParse(str_b, out b) || (b <= a))
+                str_b = Console.ReadLine();
 
-            Console.WriteLine("2^{0}", count);
-        } 
+
+           
+            UInt64 powerA = Calculate(a - 1);
+            UInt64 powerB = Calculate(b);
+            Console.WriteLine("The power of two is: 2^" + (powerB - powerA));
+            return 0;
+        }
     }
 }
