@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Lab3
 {
@@ -21,6 +21,7 @@ namespace Lab3
             this.name = name;
             this.weight = weight;
             this.height = height;
+            this.id = id;
         }
 
         public static int Create_ID()
@@ -38,10 +39,23 @@ namespace Lab3
         }
         public int CalculatorWeight(int weight, int height)
         {
-            int index_weight = weight / (height * height);
+            double height_d = (double)height / 100;
+            double index_weight_d = (double)weight / (height_d * height_d);
+            int index_weight = (int)index_weight_d;
+            Console.WriteLine(index_weight);
             return index_weight;
         }
 
+        public void Sleep()
+        {
+            for(int i = 0; i  < 7; i++)
+            {
+                if (arr_fit[i] == "train")
+                    Console.WriteLine("In " + i + "day you shoud sleep 10 hour for refuse your power");
+                if (arr_fit[i] == "hollyday")
+                    Console.WriteLine("In " + i + "day you shoud sleep 8 hour for refuse your power");
+            }
+        }
         public void InformationTrain()
         {
             for (int i = 0; i < 7; i++)
@@ -77,7 +91,7 @@ namespace Lab3
             weight_diagnosis = result_diagnosis;
             return result_diagnosis;
         }
-
+        
         public void Plan(string diagnosis)
         {
             if(diagnosis == "low_normal")
@@ -157,7 +171,8 @@ namespace Lab3
             int your_age, your_height, your_weight;
 
             Console.WriteLine("Input your gender : ");
-            while ((your_gender = Console.ReadLine()) != "man" || (your_gender = Console.ReadLine()) != "woman")
+            your_gender = Console.ReadLine();
+            while (your_gender != "man" && your_gender != "woman")
                 your_gender = Console.ReadLine();
             Console.WriteLine("Input your name : ");
             your_name = Console.ReadLine();
@@ -183,6 +198,7 @@ namespace Lab3
 
             human.CalcualtorWeight();
             human.Plan(human.Diagnosis(human.CalculatorWeight(72,185)));
+            human.Sleep();
             human.InformationTrain();
             human.InforamationPerson();
         }
