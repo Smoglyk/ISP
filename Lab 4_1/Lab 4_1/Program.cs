@@ -12,7 +12,7 @@ namespace MediaPlay
         {
             while(true)
             {
-                Console.WriteLine("Choose a sound: (1). If you want stop or puase music, push 'S' or 'P'. Exit 'E'");
+                Console.WriteLine("Choose a sound: (1).  Exit 'E'");
                 string sound = Console.ReadLine();
                 while (!(sound == "1" || sound == "S" || sound == "E"))
                     sound = Console.ReadLine();
