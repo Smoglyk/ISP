@@ -1,0 +1,12 @@
+C:\Users\Jarvis\source\repos\ISP\LabISP5\LabISP5\bin\Debug\netcoreapp3.1\LabISP5.exe
+C:\Users\Jarvis\source\repos\ISP\LabISP5\LabISP5\bin\Debug\netcoreapp3.1\LabISP5.deps.json
+C:\Users\Jarvis\source\repos\ISP\LabISP5\LabISP5\bin\Debug\netcoreapp3.1\LabISP5.runtimeconfig.json
+C:\Users\Jarvis\source\repos\ISP\LabISP5\LabISP5\bin\Debug\netcoreapp3.1\LabISP5.runtimeconfig.dev.json
+C:\Users\Jarvis\source\repos\ISP\LabISP5\LabISP5\bin\Debug\netcoreapp3.1\LabISP5.dll
+C:\Users\Jarvis\source\repos\ISP\LabISP5\LabISP5\bin\Debug\netcoreapp3.1\LabISP5.pdb
+C:\Users\Jarvis\source\repos\ISP\LabISP5\LabISP5\obj\Debug\netcoreapp3.1\LabISP5.AssemblyInfoInputs.cache
+C:\Users\Jarvis\source\repos\ISP\LabISP5\LabISP5\obj\Debug\netcoreapp3.1\LabISP5.AssemblyInfo.cs
+C:\Users\Jarvis\source\repos\ISP\LabISP5\LabISP5\obj\Debug\netcoreapp3.1\LabISP5.csproj.CoreCompileInputs.cache
+C:\Users\Jarvis\source\repos\ISP\LabISP5\LabISP5\obj\Debug\netcoreapp3.1\LabISP5.dll
+C:\Users\Jarvis\source\repos\ISP\LabISP5\LabISP5\obj\Debug\netcoreapp3.1\LabISP5.pdb
+C:\Users\Jarvis\source\repos\ISP\LabISP5\LabISP5\obj\Debug\netcoreapp3.1\LabISP5.genruntimeconfig.cache
