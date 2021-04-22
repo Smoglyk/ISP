@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 using Hospital;
 
@@ -7,18 +7,18 @@ namespace Type
 {
     abstract class List_healthy: Person
     {
+        protected string disease_stage { get; set; }
+        protected string recommendation { get; set; }
+        protected string treatment { get; set; }
+        protected string disease { get; set; }
         public List_healthy(string gender, int age, string name, int weight, int height, int id, string list_disease = "Healthy")
         : base(gender, age, name, weight, height, id, list_disease) { }
         public abstract void Set_Diagnosis(string disease, string treatment, string disease_stage);
     };
     class Infected_Pation : List_healthy
     {
-        protected string disease_stage { get; set; }
-        protected string recommendation { get; set; }
-        protected string treatment { get; set; }
         protected DateTime data_start_quarantine { get; set; }
         protected DateTime data_end_quarantine { get; set; }
-        protected string disease { get; set; }
         protected string ownDiabed { get; set; }
         protected double blood_sugar1 { get; set; }
 
@@ -91,13 +91,9 @@ namespace Type
     }
 
     class Oncology_Pation: List_healthy
-    {
-        protected string disease_stage { get; set; }
-        protected string recommendation { get; set; }
-        protected string disease { get; set; }
+    { 
         protected DateTime data_start_disease { get; set; }
         protected DateTime data_end_disease { get; set; }
-        protected string treatment { get; set; }
 
         public Oncology_Pation(string gender, int age, string name, int weight, int height, int id, string list_disease = "Healthy")
         : base(gender, age, name, weight, height, id, list_disease)
@@ -155,12 +151,8 @@ namespace Type
 
     class Psychotherapiy_Pation: List_healthy
     {
-        protected string disease_stage { get; set; }
-        protected string recommendation { get; set; }
-        protected string disease { get; set; }
         protected DateTime data_start_disease { get; set; }
         protected DateTime data_end_disease { get; set; }
-        protected string treatment { get; set; }
 
         protected string[] days_treatment = new string[7] { "Nothing", "Nothing", "Nothing", "Nothing", "Nothing", "Nothing", "Nothing" };
         public Psychotherapiy_Pation(string gender, int age, string name, int weight, int height, int id, string list_disease = "Healthy")
@@ -227,6 +219,8 @@ namespace Type
                 days_treatment[index] = value;
             }
         }
+
+
     }
 }
 namespace Lab5
@@ -261,9 +255,38 @@ namespace Lab5
         }
         static void Main(string[] args)
         {
-            Type.Infected_Pation first_pation = new Type.Infected_Pation("Man", 18, "Dante", 72, 185, 0000);
+            
             double blood_sugar1;
             double blood_sugar2;
+            string gender, name, age_s, heigth_s, weigth_s, id_s;
+            int age, heigth, weigth, id;
+
+            Console.WriteLine("Input a gender, age, name, heigth, weigth, id: ");
+
+            gender = Console.ReadLine();
+            while ((gender != "man" && gender != "woman") && (gender != "Man" && gender != "woman")
+                gender = Console.ReadLine();
+
+            age_s = Console.ReadLine();
+            while (!Int32.TryParse(age_s, out age))
+                age_s = Console.ReadLine();
+
+            name = Console.ReadLine();
+
+            heigth_s = Console.ReadLine();
+            while (!Int32.TryParse(heigth_s, out heigth))
+                heigth_s = Console.ReadLine();
+
+            weigth_s = Console.ReadLine();
+            while (!Int32.TryParse(weigth_s, out weigth))
+                weigth_s = Console.ReadLine();
+
+            id_s = Console.ReadLine();
+            while (!Int32.TryParse(id_s, out id))
+                id_s = Console.ReadLine();
+
+            Type.Infected_Pation first_pation = new Type.Infected_Pation(gender, age, name, heigth, weigth, id);
+
             Console.WriteLine("Input result bloods:");
             string str = Console.ReadLine();
             while (!double.TryParse(str, out blood_sugar1))
