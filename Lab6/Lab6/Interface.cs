@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-public interface Plan
+public interface IPlan
 {
     public void TestCovid();
 
