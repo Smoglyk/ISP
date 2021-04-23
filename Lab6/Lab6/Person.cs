@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-    public class Person : ListHealthy, IComparable<Person>, Plan
+    public class Person : ListHealthy, IComparable<Person>, IPlan
     {
         protected string Gender { get; set; }
         protected int Id { get; set; }
