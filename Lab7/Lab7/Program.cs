@@ -25,10 +25,6 @@ namespace Lab7
                 Console.WriteLine("first > second\n");
             if(div1 < div2)
                 Console.WriteLine("first < second\n");
-            //if (div1 == div2)
-            //    Console.WriteLine("first = second\n");
-            //if (div1 != div2)
-            //    Console.WriteLine("first != second\n");
             switch (div1.CompareTo(div2))
             {
                 case 0:
