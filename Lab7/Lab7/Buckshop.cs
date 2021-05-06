@@ -151,38 +151,7 @@ class Buckshop : IComparable<Buckshop>
         else
             return false;
     }
-    //public static bool operator !=(Buckshop n1, Buckshop n2)
-    //{
-
-    //    if (n1 != nullptr && n2 != nullptr)
-    //    {
-    //        Double ratation1 = (double)n1.up / (double)n1.down;
-    //        Double ratation2 = (double)n2.up / (double)n2.down;
-    //        if (ratation1 == ratation2)
-    //            return false;
-    //        else
-    //            return true;
-    //    }
-    //    else
-    //        return false;
-
-    //}
-    //public static bool operator ==(Buckshop n1, Buckshop n2)
-    //{
-    //    if (n1 != nullptr && n2 != nullptr)
-    //    {
-    //        Double ratation1 = (double)n1.up / (double)n1.down;
-    //        Double ratation2 = (double)n2.up / (double)n2.down;
-    //        if (ratation1 == ratation2)
-    //            return true;
-    //        else
-    //            return false;
-    //    }
-    //    else
-    //        return false;
-
-
-    //}
+    
     public string ConverStr()
     {
         string str = up.ToString() + " / " + down.ToString();
