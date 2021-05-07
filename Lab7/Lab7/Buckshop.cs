@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,6 +6,17 @@ class Buckshop : IComparable<Buckshop>
 {
     public int up;
     public int down;
+    public int Up
+    {
+        get
+        {
+            return up;
+        }
+        set
+        {
+            up = value;
+        }
+    }
     public int Down
     {
         get
@@ -33,7 +44,7 @@ class Buckshop : IComparable<Buckshop>
 
     public int CompareTo(Buckshop o)
     {
-        int nok = (this.up * o.up)/GCD(this.down, o.down);
+        int nok = (this.up * o.up) / GCD(this.down, o.down);
         int ratation1 = nok / this.down;
         int ratation2 = nok / o.down;
         if (ratation1 == ratation2)
@@ -158,20 +169,20 @@ class Buckshop : IComparable<Buckshop>
         int ratation1 = nok / n1.down;
         int ratation2 = nok / n2.down;
         if (ratation1 == ratation2)
-                return false;
-            else
-                return true;
+            return false;
+        else
+            return true;
     }
     public static bool operator ==(Buckshop n1, Buckshop n2)
     {
-       
-            int nok = (n1.up * n2.up) / GCD(n1.down, n2.down);
-            int ratation1 = nok / n1.down;
-            int ratation2 = nok / n2.down;
-            if (ratation1 == ratation2)
-                return true;
-            else
-                return false;
+
+        int nok = (n1.up * n2.up) / GCD(n1.down, n2.down);
+        int ratation1 = nok / n1.down;
+        int ratation2 = nok / n2.down;
+        if (ratation1 == ratation2)
+            return true;
+        else
+            return false;
 
     }
     public string ConverStr()
@@ -205,6 +216,11 @@ class Buckshop : IComparable<Buckshop>
         }
     }
 
+    public static implicit operator Buckshop(int x)
+    {
+        Buckshop b = new Buckshop(x, 1);
+        return b;
+    }
     public static explicit operator short(Buckshop n)
     {
         return (short)((short)n.up / (short)n.down);
