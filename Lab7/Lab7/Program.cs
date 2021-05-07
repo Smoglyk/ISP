@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Lab7
 {
@@ -50,6 +50,8 @@ namespace Lab7
             div1.ToStr("4/8");
             double number2 = (double)(div1);
             Console.WriteLine("-7/8 - 4/8 = " + (number1 - number2));
+            Buckshop b = 10;
+            Console.WriteLine(b.up);
 
         }
     }
