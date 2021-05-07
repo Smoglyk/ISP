@@ -44,9 +44,9 @@ class Buckshop : IComparable<Buckshop>
 
     public int CompareTo(Buckshop o)
     {
-        int nok = (this.up * o.up) / GCD(this.down, o.down);
-        int ratation1 = nok / this.down;
-        int ratation2 = nok / o.down;
+        int nok = (this.down * o.down) / GCD(this.down, o.down);
+        int ratation1 = (nok / this.down) * this.up;
+        int ratation2 = (nok / o.down) * o.up;
         if (ratation1 == ratation2)
             return 0;
         if (ratation1 > ratation2)
@@ -144,9 +144,9 @@ class Buckshop : IComparable<Buckshop>
 
     public static bool operator >(Buckshop n1, Buckshop n2)
     {
-        int nok = (n1.up * n2.up) / GCD(n1.down, n2.down);
-        int ratation1 = nok / n1.down;
-        int ratation2 = nok / n2.down;
+        int nok = (n1.down * n2.down) / GCD(n1.down, n2.down);
+        int ratation1 = (nok / n1.down) * n1.up;
+        int ratation2 = (nok / n2.down) * n2.up;
         if (ratation1 > ratation2)
             return true;
         else
@@ -154,9 +154,9 @@ class Buckshop : IComparable<Buckshop>
     }
     public static bool operator <(Buckshop n1, Buckshop n2)
     {
-        int nok = (n1.up * n2.up) / GCD(n1.down, n2.down);
-        int ratation1 = nok / n1.down;
-        int ratation2 = nok / n2.down;
+        int nok = (n1.down * n2.down) / GCD(n1.down, n2.down);
+        int ratation1 = (nok / n1.down) * n1.up;
+        int ratation2 = (nok / n2.down) * n2.up;
         if (ratation1 < ratation2)
             return true;
         else
@@ -165,9 +165,9 @@ class Buckshop : IComparable<Buckshop>
     public static bool operator !=(Buckshop n1, Buckshop n2)
     {
 
-        int nok = (n1.up * n2.up) / GCD(n1.down, n2.down);
-        int ratation1 = nok / n1.down;
-        int ratation2 = nok / n2.down;
+        int nok = (n1.down * n2.down) / GCD(n1.down, n2.down);
+        int ratation1 = (nok / n1.down) * n1.up;
+        int ratation2 = (nok / n2.down) * n2.up;
         if (ratation1 == ratation2)
             return false;
         else
@@ -176,9 +176,9 @@ class Buckshop : IComparable<Buckshop>
     public static bool operator ==(Buckshop n1, Buckshop n2)
     {
 
-        int nok = (n1.up * n2.up) / GCD(n1.down, n2.down);
-        int ratation1 = nok / n1.down;
-        int ratation2 = nok / n2.down;
+        int nok = (n1.down * n2.down) / GCD(n1.down, n2.down);
+        int ratation1 = (nok / n1.down) * n1.up;
+        int ratation2 = (nok / n2.down) * n2.up;
         if (ratation1 == ratation2)
             return true;
         else
